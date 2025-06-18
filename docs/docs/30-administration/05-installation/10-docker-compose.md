@@ -12,6 +12,8 @@ services:
     image: woodpeckerci/woodpecker-server:v3
     ports:
       - 8000:8000
+    expose:
+      - 9000
     volumes:
       - woodpecker-server-data:/var/lib/woodpecker/
     environment:
